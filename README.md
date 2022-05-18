@@ -1,4 +1,4 @@
-# eltch
+# Eltch
 **Eltch** is a module that will help you in working with electricity.
 
 Now, an "electric current wheel" based on Ohm's law has been implemented. With it, you can calculate: *Volts, Watts, Ohms, Amps*. Having only two values from this list.
@@ -26,3 +26,10 @@ The function returns a dictionary with all the values from "electric current whe
 resist_sum = all_values['R'] + 0.6
 # ...
 ```
+## Installing Eltch and Supported Versions
+**Eltch** is available on PyPI:
+```
+$ python -m pip install eltch
+```
+
+Eltch officially supports Python 3.6+.
