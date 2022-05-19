@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: eltch
+Version: 0.9.3
+Summary: Electrotechnical assistant.
+Home-page: https://github.com/dymshnc/eltch
+Author: dymshnc
+Author-email: officialdyomshin@gmail.com
+License: Apache License, Version 2.0, see LICENSE file
+Project-URL: Documentation, https://github.com/dymshnc/eltch#readme
+Project-URL: Source, https://github.com/dymshnc/eltch
+Description: # Eltch
+        **Eltch** is a module that will help you in working with electricity.
+        
+        Now, an "electric current wheel" based on Ohm's law has been implemented. With it, you can calculate: *Volts, Watts, Ohms, Amps*. Having only two values from this list.
+        
+        ```python
+        import eltch
+        
+        e = eltch.EWheel()
+        
+        # e.volts_amps(volts_val, volts_val)
+        all_values = e.volts_amps(100, 200)
+        
+        print(all_values)
+        ```
+        ```python
+        {'U': 100.0, 'R': 0.5, 'I': 200.0, 'P': 20000.0}
+        ```
+        
+        The "EWheel" class has a number of functions: `watts_volts()`, `watts_ohms()`, `watts_amps()`, `volts_watts()`, `volts_ohms()`, `volts_amps()`, `ohms_watts()`, `ohms_volts()`, `ohms_amps()`, `amps_watts()`, `amps_volts()`, `amps_ohms()`.
+        
+        With an example, you can see how it works. A function is selected for the value you have. Based on the name of the function, you pass these values to it.
+        The function returns a dictionary with all the values from "electric current wheel" that you can use for your own purposes.
+        
+        ```python
+        resist_sum = all_values['R'] + 0.6
+        # ...
+        ```
+        ## Installing Eltch and Supported Versions
+        **Eltch** is available on PyPI:
+        ```
+        $ python -m pip install eltch
+        ```
+        
+        Eltch officially supports Python 3.6+.
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

@@ -1,9 +1,7 @@
 class EWheel:
     '''
         An "electric current wheel" based on Ohm's law is implemented in this class.
-        Calculations are made in the international system of units.
-
-        Creator: Konstantin Dyomshin (dymshnc).
+        Calculations are made in the international system of units..
     '''
 
     # watts_...
